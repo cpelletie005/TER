@@ -6,6 +6,7 @@ using namespace Eigen;
 
 double deplacement_front(VectorXd rho, VectorXd rho_1,VectorXd rho_2, VectorXd maille, VectorXd maille_1, VectorXd maille_2, int nb_maille)
 {
+  //coucou
   double dx=1./nb_maille;
   // renvoie le deplacement du front de pyrolise entre les deux denieres iterations
   double rho_max(rho_2(nb_maille-1));
