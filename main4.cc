@@ -4,16 +4,21 @@ using namespace std;
 // #include <vtkstream>
 #include "Eigen"
 using namespace Eigen;
-
+//salut
 double deplacement_front(VectorXd rho, VectorXd rho_1,VectorXd rho_2, VectorXd maille, VectorXd maille_1, VectorXd maille_2, int nb_maille)
 {
-  //coucou
+
   double dx=1./nb_maille;
   // renvoie le deplacement du front de pyrolise entre les deux denieres iterations
   double rho_max(rho_2(nb_maille-1));
   double rho_min(rho_2(0));
   double rho_1max(rho_1(nb_maille-1));
   double rho_1min(rho_1(0));
+<<<<<<< HEAD
+=======
+  // cout << "rho min " << rho_max << endl;
+
+>>>>>>> 96be3980d19bd1c92503fdf1fb0b77a33dc9618d
 
   int i(0);
   while(rho_2(i)<((rho_max+rho_min)/2))
